@@ -8,13 +8,12 @@ The main goal of this project is to leverage transfer learning by fine-tuning a 
 
 ## Key Features
 
-1. **Model Architecture**: Utilizes ResNet-50 pre-trained on ImageNet as the base model. // Uses a powerful and well-established convolutional neural network architecture
-2. **Fine-tuning**: Modifies the final fully connected layer to output 90 classes instead of the original 1000 ImageNet classes. // Adapts the pre-trained model to our specific classification task
-3. **Partial Freezing**: Freezes initial layers while allowing the last convolution layer and the new fully connected layer to be trainable. // Balances between leveraging pre-trained features and adapting to new data
-4. **Data Augmentation**: Implements random horizontal flips and rotations to enhance model generalization. // Increases the effective size of the training dataset and improves model robustness
-5. **Learning Rate Scheduling**: Uses StepLR scheduler to adjust the learning rate during training. // Helps in finding optimal parameters and improving convergence
-6. **Performance Metrics**: Reports loss, accuracy, and F1 score for comprehensive model evaluation. // Provides a thorough assessment of the model's performance
-
+1. **Model Architecture**: Utilizes ResNet-50 pre-trained on ImageNet as the base model. 
+2. **Fine-tuning**: Modifies the final fully connected layer to output 90 classes instead of the original 1000 ImageNet classes. 
+3. **Partial Freezing**: Freezes initial layers while allowing the last convolution layer and the new fully connected layer to be trainable. 
+4. **Data Augmentation**: Implements random horizontal flips and rotations to enhance model generalization. 
+5. **Learning Rate Scheduling**: Uses StepLR scheduler to adjust the learning rate during training. 
+6. **Performance Metrics**: Reports loss, accuracy, and F1 score for comprehensive model evaluation. 
 ## Dataset
 
 The dataset consists of animal images divided into 90 classes. It is split into training (60%), validation (20%), and test (20%) sets.
